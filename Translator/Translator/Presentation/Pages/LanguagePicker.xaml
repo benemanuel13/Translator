@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:Translator.Presentation.Views.LanguagePicker"
+             x:Class="Translator.Presentation.Pages.LanguagePicker">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label FontSize="15" FontAttributes="Bold" TextColor="LightBlue" Text="BensTranslator"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="5, 5, 5, 5">
+            <Label x:Name="Title" FontSize="25" HorizontalOptions="CenterAndExpand"></Label>
+            <view:LanguagePickerList x:Name="Languages"></view:LanguagePickerList>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

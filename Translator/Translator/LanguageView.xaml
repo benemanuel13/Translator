@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Translator.LanguageView">
+  <ContentView.Content>
+        <ScrollView>
+            <StackLayout Orientation="Horizontal" HeightRequest="40" HorizontalOptions="FillAndExpand">
+                <Label x:Name="Name" FontSize="30" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Label>
+                <Button x:Name="Select" Text="Select" Clicked="Select_Clicked" HorizontalOptions="End"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

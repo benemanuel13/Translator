@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Translator"
+             x:Class="Translator.MainPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label FontSize="15" FontAttributes="Bold" TextColor="LightBlue" Text="BensTranslator"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <StackLayout Padding="5, 5, 5, 5">
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="CurrentLanguage" FontAttributes="Bold" Text="Your Current Language: English" HorizontalOptions="FillAndExpand"></Label>
+            <Button x:Name="PickLanguage" Text="Pick Language" HorizontalOptions="End" Clicked="PickLanguage_Clicked"></Button>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="ToLanguage" FontAttributes="Bold" Text="Translating To: German" HorizontalOptions="FillAndExpand"></Label>
+            <Button x:Name="PickToLanguage" Text="Pick Language" HorizontalOptions="End" Clicked="PickToLanguage_Clicked"></Button>
+        </StackLayout>
+        
+        <Editor x:Name="TextToTranslate" HeightRequest="120" HorizontalOptions="Fill"></Editor>
+        
+        <StackLayout VerticalOptions="End">
+            <Button x:Name="Translate" Text="Translate" Clicked="Translate_Clicked"></Button>
+            <Button x:Name="TranslateSpeech" Text="Speech Translate" Clicked="TranslateSpeech_Clicked"></Button>
+            <Label x:Name="Translation" FontSize="20" HeightRequest="120" HorizontalOptions="Fill"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
